@@ -8,14 +8,14 @@ This repository is the implementation of [SELAR](arKiv).
 ### Data Preprocessing
 We used datasets from [KGNN-LS](https://github.com/hwwang55/KGNN-LS) and [RippleNet](https://github.com/hwwang55/RippleNet) for link prediction.
 Download meta-paths label (`meta_labels/`) from this [link](https://drive.google.com/drive/folders/1sssNbczHD2usnLTk6KoukfO5OipPMKpW?usp=sharing).
-- `../data/music/`
+- `data/music/`
   - `ratings_final.npy` : preprocessed rating file released by KGNN-LS;
   - `kg_final.npy` : knowledge graph file;
     - `meta_labels/`
       - `pos_meta{}_{}.pickle` : meta-path positive label for auxiliary task
       - `neg_meta{}_{}.pickle` : meta-path negative label for auxiliary task
 
-- `../data/book/`
+- `data/book/`
   - `ratings_final.npy` : preprocessed rating file released by RippleNet;
   - `kg_final.npy` : knowledge graph file;
     - `meta_labels/`
