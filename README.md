@@ -1,5 +1,5 @@
 # Self-supervised Auxiliary Learning with Meta-paths for Heterogeneous Graphs
-This repository is the implementation of [SELAR](arKiv).
+This repository is the implementation of [SELAR](https://arxiv.org/abs/2007.08294).
 
 > Dasol Hwang<sup>* </sup>, Jinyoung Park<sup>* </sup>, Sunyoung Kwon, Kyung-min Kim, Jung-Woo Ha, Hyunwoo J. Kim, Self-supervised Auxiliary Learning with Meta-paths for Heterogeneous Graphs, In Advanced in Neural Information Processing Systems (NeurIPS 2020).
 
