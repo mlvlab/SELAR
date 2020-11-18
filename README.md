@@ -34,6 +34,35 @@ $ conda env create -f env.yml
 $ python main_music.py
 $ python main_book.py
 ```
+### Overview of the results of link prediction
+#### Last-FM (Music)
+Base GNNs | Vanilla | w/o MP | w/ MP | **SELAR** | **SELAR+Hint** 
+-- | -- | -- | -- | -- | -- 
+GCN | 0.7963 | 0.7899 | 0.8235 | **0.8296** | 0.8121 
+GAT | 0.8115 | 0.8115 | 0.8263 | 0.8294 | **0.8302**
+GIN | 0.8199 | 0.8217 | 0.8242 | **0.8361** | 0.8350 
+SGC | 0.7703 | 0.7766 | 0.7718 | 0.7827 | **0.7975** 
+GTN | 0.7836 | 0.7744 | 0.7865 | 0.7988 | **0.8067** 
+
+#### Book-Crossing (Book)
+Base GNNs | Vanilla | w/o MP | w/ MP | **SELAR** | **SELAR+Hint** 
+-- | -- | -- | -- | -- | -- 
+GCN | 0.7039 | 0.7031 | 0.7110 | 0.7182 | **0.7208**
+GAT | 0.6891 | 0.6968 | 0.7075 | 0.7345 | **0.7360**
+GIN | 0.6979 | 0.7210 | 0.7338 | **0.7526** | 0.7513 
+SGC | 0.6860 | 0.6808 | 0.6792 | 0.6902 | **0.6926** 
+GTN | 0.6732 | 0.6758 | 0.6724 | **0.6858** | 0.6850
+
+## Citation
+```
+@article{hwang2020self,
+  title={Self-supervised Auxiliary Learning with Meta-paths for Heterogeneous Graphs},
+  author={Hwang, Dasol and Park, Jinyoung and Kwon, Sunyoung and Kim, KyungMin and Ha, Jung-Woo and Kim, Hyunwoo J},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  year={2020}
+}
+```
 
 ### License
 ```
