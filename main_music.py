@@ -96,14 +96,14 @@ def main():
         loaders = []
         if args.selar == 'True':
             for i, train_loader in enumerate(train_loaders):
-                loaders.append(train_loader(train_dataset, meta_fold[i], None))
+                loaders.append(train_loader(train_fold[i], meta_fold[i], None))
             train_loader = sampler.Meta_NeighborSampler(args=args, edge_index=edge_index, num_nodes=num_nodes, size=args.neighbor_size, num_hops=args.num_layers, batch_size=args.batch_size)
             loader = train_loader(train_dataset, None, None)
             train_losses, train_auc = selar_train(args, epoch, loaders, loader, model, vnet, phis, optimizer, optimizer_v, opt_phi, num_nodes, device)
 
         if args.selarhint == 'True':
             for i, train_loader in enumerate(train_loaders):
-                loaders.append(train_loader(train_dataset, meta_fold[i], hub))
+                loaders.append(train_loader(train_fold[i], meta_fold[i], hub))
             train_loader = sampler.Meta_NeighborSampler(args=args, edge_index=edge_index, num_nodes=num_nodes, size=args.neighbor_size, num_hops=args.num_layers, batch_size=args.batch_size)
             loader = train_loader(train_dataset, None, hub)
             train_losses, train_auc = selarhint_train(args, epoch, loaders, loader, model, h_nets, vnet, h_vnet, phis, optimizer, h_optimizers, optimizer_v, h_optimizer_v, opt_phi, num_nodes, device)                
