@@ -55,12 +55,16 @@ GTN | 0.6732 | 0.6758 | 0.6724 | **0.6858** | 0.6850
 
 ## Citation
 ```
-@article{hwang2020self,
-  title={Self-supervised Auxiliary Learning with Meta-paths for Heterogeneous Graphs},
-  author={Hwang, Dasol and Park, Jinyoung and Kwon, Sunyoung and Kim, KyungMin and Ha, Jung-Woo and Kim, Hyunwoo J},
-  journal={Advances in Neural Information Processing Systems},
-  volume={33},
-  year={2020}
+@inproceedings{NEURIPS2020_74de5f91,
+ author = {Hwang, Dasol and Park, Jinyoung and Kwon, Sunyoung and Kim, KyungMin and Ha, Jung-Woo and Kim, Hyunwoo J},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {10294--10305},
+ publisher = {Curran Associates, Inc.},
+ title = {Self-supervised Auxiliary Learning with Meta-paths for Heterogeneous Graphs},
+ url = {https://proceedings.neurips.cc/paper/2020/file/74de5f915765ea59816e770a8e686f38-Paper.pdf},
+ volume = {33},
+ year = {2020}
 }
 ```
 
